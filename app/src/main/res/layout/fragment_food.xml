@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.choose.food.FoodFragment">
+
+    <TextView
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/txt_cuisines"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="Choose your favorite
+        food"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_burger"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_cuisines"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingHorizontal="24dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="Burger"
+        android:background="@drawable/bg_btn_5"
+        android:backgroundTint="#DC9A14"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+    <Button
+        android:id="@+id/btn_donut"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:paddingHorizontal="26dp"
+        android:text="Donut"
+        android:backgroundTint="#EECC53"
+        android:background="@drawable/bg_btn_5"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/btn_burger"
+        app:layout_constraintBottom_toBottomOf="@id/btn_burger"
+        app:layout_constraintTop_toTopOf="@id/btn_burger"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+    <Button
+        android:id="@+id/btn_bread"
+        android:paddingHorizontal="36dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/btn_donut"
+        app:layout_constraintBottom_toBottomOf="@id/btn_donut"
+        app:layout_constraintTop_toTopOf="@id/btn_donut"
+        android:background="@drawable/bg_btn_5"
+        android:backgroundTint="#E5E5E5"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="Bread"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+    <Button
+        android:id="@+id/btn_ice_cream"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_bread"
+        app:layout_constraintEnd_toStartOf="@id/btn_bread"
+        android:paddingHorizontal="36dp"
+        android:backgroundTint="#9C9C9C"
+        android:background="@drawable/bg_btn_5"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="Ice Cream"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+    <Button
+        android:id="@+id/btn_sushi"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_ice_cream"
+        app:layout_constraintBottom_toBottomOf="@id/btn_ice_cream"
+        app:layout_constraintTop_toTopOf="@id/btn_ice_cream"
+        android:paddingHorizontal="30dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="Sushi"
+        android:background="@drawable/bg_btn_5"
+        android:backgroundTint="#EECC53"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+    <Button
+        android:id="@+id/btn_salad"
+        android:layout_marginStart="24dp"
+        android:paddingHorizontal="38dp"
+        app:layout_constraintStart_toEndOf="@id/btn_ice_cream"
+        app:layout_constraintBottom_toBottomOf="@id/btn_ice_cream"
+        app:layout_constraintTop_toTopOf="@id/btn_ice_cream"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="Salad"
+        android:backgroundTint="#E0C079"
+        android:background="@drawable/bg_btn_5"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+    <Button
+        android:id="@+id/btn_steak"
+        android:layout_marginStart="-30dp"
+        android:paddingHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn_5"
+        android:backgroundTint="#AE9847"
+        app:layout_constraintTop_toBottomOf="@id/btn_ice_cream"
+        app:layout_constraintStart_toEndOf="@id/btn_donut"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="Steak"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+    <Button
+        android:id="@+id/btn_milkshake"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_steak"
+        app:layout_constraintBottom_toBottomOf="@id/btn_steak"
+        app:layout_constraintTop_toTopOf="@id/btn_steak"
+        android:paddingHorizontal="35dp"
+        android:backgroundTint="#E0C079"
+        android:background="@drawable/bg_btn_5"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="Milkshake"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+    <Button
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_milkshake"
+        app:layout_constraintBottom_toBottomOf="@id/btn_milkshake"
+        app:layout_constraintTop_toTopOf="@id/btn_milkshake"
+        android:background="@drawable/bg_btn_5"
+        android:backgroundTint="#9F9368"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+
+    <Button
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/btn_steak"
+        app:layout_constraintBottom_toBottomOf="@id/btn_steak"
+        app:layout_constraintTop_toTopOf="@id/btn_steak"
+        android:backgroundTint="#DC9A14"
+        android:background="@drawable/bg_btn_5"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+    <Button
+        android:id="@+id/btn_pizza"
+        android:paddingHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_milkshake"
+        app:layout_constraintEnd_toEndOf="@id/btn_donut"
+        android:background="@drawable/bg_btn_5"
+        android:backgroundTint="#E5E5E5"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="Pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+    <Button
+        android:id="@+id/btn_milk"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_pizza"
+        app:layout_constraintBottom_toBottomOf="@id/btn_pizza"
+        app:layout_constraintTop_toTopOf="@id/btn_pizza"
+        android:paddingHorizontal="36dp"
+        android:backgroundTint="#F6A900"
+        android:background="@drawable/bg_btn_5"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="Milk"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+
+    <Button
+        android:id="@+id/btn_seafood"
+        android:layout_marginStart="22dp"
+        app:layout_constraintStart_toEndOf="@id/btn_pizza"
+        app:layout_constraintBottom_toBottomOf="@id/btn_pizza"
+        app:layout_constraintTop_toTopOf="@id/btn_pizza"
+        android:paddingHorizontal="38dp"
+        android:background="@drawable/bg_btn_5"
+        android:backgroundTint="#F2E24F"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="Seafood"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+    <Button
+        android:id="@+id/btn_taco"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_milk"
+        app:layout_constraintEnd_toEndOf="@id/btn_milk"
+        android:paddingHorizontal="40dp"
+        android:backgroundTint="#9C9C9C"
+        android:background="@drawable/bg_btn_5"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="Taco"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+
+    <Button
+        android:id="@+id/btn_pasta"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/btn_taco"
+        app:layout_constraintBottom_toBottomOf="@id/btn_taco"
+        app:layout_constraintTop_toTopOf="@id/btn_taco"
+        android:paddingHorizontal="30dp"
+        android:background="@drawable/bg_btn_5"
+        android:backgroundTint="#DC9A14"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="Pasta"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+    
+    <Button
+        android:id="@+id/btn_yoghurt"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/btn_pasta"
+        app:layout_constraintBottom_toBottomOf="@id/btn_pasta"
+        app:layout_constraintTop_toTopOf="@id/btn_pasta"
+        android:paddingHorizontal="18dp"
+        android:backgroundTint="#9F9368"
+        android:background="@drawable/bg_btn_5"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="Yoghurt"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

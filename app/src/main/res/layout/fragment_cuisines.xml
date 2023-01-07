@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.choose.cuisines.CuisinesFragment">
+
+    <TextView
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/txt_cuisines"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="Choose your favorite
+        cuisines"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_thai"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_cuisines"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="Thai"
+        android:backgroundTint="#EECC53"
+        android:background="@drawable/bg_btn_4"
+        android:layout_width="130dp"
+        android:layout_height="130dp"/>
+
+
+    <Button
+        android:id="@+id/btn_spanish"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="@id/btn_thai"
+        app:layout_constraintEnd_toStartOf="@id/btn_thai"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:text="Spanish"
+        android:backgroundTint="#BFB8A6"
+        android:background="@drawable/bg_btn_4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <Button
+        android:textSize="20sp"
+        android:id="@+id/btn_mexico"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:text="Mexico"
+        android:layout_marginStart="36dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_cuisines"
+        app:layout_constraintStart_toEndOf="@id/btn_thai"
+        android:backgroundTint="#F2E24F"
+        android:background="@drawable/bg_btn_4"
+        android:layout_width="160dp"
+        android:layout_height="160dp"/>
+
+
+    <Button
+        android:id="@+id/btn_italian"
+        android:layout_marginTop="4dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="Italian"
+        android:backgroundTint="#F0DDB6"
+        android:background="@drawable/bg_btn_4"
+        android:layout_marginEnd="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_mexico"
+        android:layout_width="170dp"
+        android:layout_height="170dp"/>
+
+
+    <Button
+        android:id="@+id/btn_turkish"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Turkish"
+        android:layout_marginStart="36dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_spanish"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/bg_btn_4"
+        android:backgroundTint="#D7A63C"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+
+    <Button
+        android:id="@+id/btn_greek"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="Greek"
+        android:layout_marginEnd="-7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_italian"
+        android:backgroundTint="#DC9A14"
+        android:background="@drawable/bg_btn_4"
+        android:layout_width="110dp"
+        android:layout_height="110dp"/>
+
+    <Button
+        android:id="@+id/btn_japanese"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Japanese"
+        app:layout_constraintEnd_toStartOf="@id/btn_greek"
+        app:layout_constraintTop_toBottomOf="@id/btn_turkish"
+        android:background="@drawable/bg_btn_4"
+        android:backgroundTint="#E0C079"
+        android:layout_width="170dp"
+        android:layout_height="170dp"/>
+
+
+    <Button
+        android:id="@+id/btn_indian"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="Indian"
+        android:backgroundTint="#AE9847"
+        android:background="@drawable/bg_btn_4"
+        android:layout_marginTop="46dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_turkish"
+        app:layout_constraintEnd_toStartOf="@id/btn_japanese"
+        android:layout_width="160dp"
+        android:layout_height="160dp"/>
+
+
+    <Button
+        android:id="@+id/btn_german"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="German"
+        android:background="@drawable/bg_btn_4"
+        android:backgroundTint="#F6A900"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_greek"
+        app:layout_constraintStart_toEndOf="@id/btn_japanese"
+        android:layout_width="140dp"
+        android:layout_height="140dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
